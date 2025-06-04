@@ -43,18 +43,24 @@ const Final = () => {
   }, [story, unlockEnding, unlockedEndings]);
 
   return (
-    <div className="story-page" id="story-page">
+    <div
+      className={`story-page ${story?.isRobotPov ? "robot-pov" : ""}`}
+      id="story-page"
+    >
       <Header>
         <button>How to play</button>
         <button>View endings</button>
       </Header>
 
-      <div className="story-section">
-        <div className="lines">
-          <p className="story-text">
+      <div className={`story-section ${story?.isRobotPov ? "robot-pov" : ""}`}>
+        <div className={`lines ${story?.isRobotPov ? "robot-pov" : ""}`}>
+          <p className={`story-text ${story?.isRobotPov ? "robot-pov" : ""}`}>
             {currentStep !== STORY_STEPS.start && (
               <>
-                <span className="option" onClick={goToBeginning}>
+                <span
+                  className={`option ${story.isRobotPov ? "robot-pov" : ""}`}
+                  onClick={goToBeginning}
+                >
                   {"<"} Back to beginning
                 </span>
                 <br />
@@ -80,7 +86,7 @@ const Final = () => {
                 <>
                   <span
                     key={`option-${currentStep}-${i}`}
-                    className={`option ${option.disabled ? "disabled" : ""}`}
+                    className={`option ${story.isRobotPov ? "robot-pov" : ""} ${option.disabled ? "disabled" : ""}`}
                     onClick={() =>
                       option.disabled ? null : goToStep(option.next)
                     }
