@@ -96,4 +96,8 @@
   .lines {
     padding: 0px 20px 0px 55px;
   }
+
+  .option {
+    line-height: 64px;
+  }
 }
