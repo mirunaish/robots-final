@@ -131,6 +131,7 @@
   }
 
   .option {
-    line-height: 64px;
+    display: inline-block;
+    margin: 20px 0;
   }
 }
