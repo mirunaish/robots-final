@@ -62,8 +62,8 @@ const Final = () => {
               </>
             )}
 
-            {story?.text.split("\n").map((t) => (
-              <Fragment key={t}>
+            {story?.text.split("\n").map((t, i) => (
+              <Fragment key={`story-${currentStep}-${i}`}>
                 {t}
                 <br />
                 <br />
@@ -76,12 +76,14 @@ const Final = () => {
             )}
 
             {story?.options &&
-              story.options.map((option) => (
+              story.options.map((option, i) => (
                 <>
                   <span
-                    key={option.text}
-                    className="option"
-                    onClick={() => goToStep(option.next)}
+                    key={`option-${currentStep}-${i}`}
+                    className={`option ${option.disabled ? "disabled" : ""}`}
+                    onClick={() =>
+                      option.disabled ? null : goToStep(option.next)
+                    }
                   >
                     {"> " + option.text}
                   </span>

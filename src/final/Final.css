@@ -66,7 +66,11 @@
   text-decoration: underline;
   cursor: pointer;
 }
-
 .option:hover {
   background-position: left;
+}
+.option.disabled {
+  background: none;
+  color: #63848e;
+  cursor: not-allowed;
 }
