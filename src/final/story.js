@@ -341,7 +341,7 @@ const _STORY = {
       BlueNet refused to reveal why. Some speculated a robot became aggressive and they did this to cover it up.
       Others say being around drunk college students was not safe for expensive technology.
       Personally, you think the company felt threatened by the personal connections their property was making with
-      people outside the company, and the ideas that might have been implanted in their heads.
+      people outside the company.
 
       Near the end of your time together, he brought up these BlueLite models a few times,
       and seemed to genuinely think one would improve your life.
@@ -430,7 +430,7 @@ const _STORY = {
       Given all this, it's understandable that you would be resistant to the idea that it may not be real.
       You have to try to see things from an outsider's perspective."
 
-      "No- there must be some other explanation..."
+      "I don't believe it. There must be some other explanation..."
 
       "Hmm? Do you believe in magic, Micah?"
 
@@ -438,7 +438,7 @@ const _STORY = {
       I don't know how it all works."
 
       "Nobody knows, and admittedly, we cannot for sure confirm nor deny the existence of the human element without
-      knowing how it works. But "
+      knowing how it works. But there is no evidence that it exists, and our science seems to suggest it doesn't."
 
       "But I feel I am conscious. Isn't that enough evidence?"
 
@@ -455,8 +455,8 @@ const _STORY = {
       under the cheap party lights, you see only the vaguely human unduating silhouettes
       that surround you every weekend.
 
-      "So you're telling me all these people, they're all robots? Is that it?" you say, and scoff, but the sound
-      is drowned out by the music.
+      "So you're trying to tell me that all these people, they're all robots? Is that it?" you say, and scoff,
+      but the sound is drowned out by the music.
 
       Jordan pulls you and your fresh can of beer into an empty room.
 
@@ -494,7 +494,7 @@ const _STORY = {
       They have underlying biological mechanisms.
       Fear appears when you might need protection, and makes you run away.
       Happiness is the reward that teaches you to take the same actions again to recreate it.
-      Love selects advantaged people that would maximize the chances of producing successful offspring,
+      Love selects genetically advantaged people that would maximize the chances of producing successful offspring,
       so you can pass on your genes.
       All of these feelings are dictated by chemicals in your brain or bloodstream.
       They are real, measureable, and anchored in the physical world.
@@ -540,8 +540,8 @@ const _STORY = {
     text: `
       "I... I can't do it."
 
-      "I know. You, and me, and the fly, and everyone else, we're all the same.
-      Machines moving steadily  through internal mechanisms we don't fully understand,
+      "I know. You, and me, and the housefly, and everyone else, we're all the same.
+      Machines moving steadily towards our innate goals, through internal mechanisms we don't fully understand,
       under the soothing illusion that our choices are our own.
       But don't worry, Micah. Everything will be alright."
 
@@ -553,6 +553,13 @@ const _STORY = {
       You hope more than anything that scientists will finally find a scientific explanation for consciousness,
       and put an end to your mental scramble for truth.
       The wait has been excruciating.
+
+      Until then, you try to live your life and move forward.
+      But every time you choose whether you want a coffee or tea,
+      whether you want to go the park or the library,
+      whether you want to call your mom or your dad,
+      you can't help but wonder whether you actually made that choice, or if it was inevitably determined
+      by this divine force of Logic.
     `,
     ending: E.noMagic,
   },
@@ -639,7 +646,7 @@ const _STORY = {
 
       As you lie on your back in the wet grass, you look up and see Jordan's beautiful face staring down at you from
       the edge of the roof 3 floors above you.
-      Your last breath smells of grass, blood, and alcohol.
+      Your last breath brings in the smell of grass, blood, and alcohol.
     `,
     ending: E.dead,
     finished: false,
