@@ -74,3 +74,26 @@
   color: #63848e;
   cursor: not-allowed;
 }
+
+@media (max-width: 800px) {
+  .story-section {
+    width: 100%;
+
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        transparent 40px,
+        #992420 41px,
+        transparent 42px
+      ),
+      linear-gradient(#f7f7f755, #f7f7f755), url("../assets/paper.jpg");
+  }
+
+  .story-page {
+    padding: 120px 10px;
+  }
+
+  .lines {
+    padding: 0px 20px 0px 55px;
+  }
+}
