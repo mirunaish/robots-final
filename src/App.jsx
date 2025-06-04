@@ -1,7 +1,7 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { ROUTES } from "./consts";
 import HomePage from "./HomePage";
-import Final from "./final/final";
+import Final from "./final/Final";
 import FinalExplanation from "./final/FinalExplanation";
 import "./App.css";
 
