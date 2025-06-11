@@ -48,8 +48,8 @@ const Final = () => {
       id="story-page"
     >
       <Header>
-        <button>How to play</button>
-        <button>View endings</button>
+        {/* <button>How to play</button>
+        <button>View endings</button> */}
       </Header>
 
       <div className={`story-section ${story?.isRobotPov ? "robot-pov" : ""}`}>
