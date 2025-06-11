@@ -26,7 +26,7 @@ const S = {
   empathy: "empathy",
   selfPreservation: "selfPreservation",
 
-  why_uni: "why_uni",
+  neutralQuestion: "neutralQuestion",
 };
 export { S as STORY_STEPS };
 
@@ -110,10 +110,7 @@ const _STORY = {
       You look around for an empty seat and spot one in the very back of the room. You sit down.
 
       The person sitting to your right turns to look at you. You glance at him.
-      He's nervously fidgeting with his sleeves, though his deep brown eyes are fixated on yours.
-      His wavy black shoulder-length hair looks .
-      His outfit is, though you can't help but note that the colors don't really match.
-      In short, he's one of the prettiest guys you've ever seen.
+      He's nervously fidgeting with his sleeves, though his soft eyes are fixated on yours.
       You feel the weight of his gaze on you and it's making you nervous.
 
       "Uh... hi," you say cautiously.
@@ -154,8 +151,8 @@ const _STORY = {
       },
       { text: `"You're just a machine."`, next: S.bad },
       {
-        text: `"So... why are you here, anyway?"`,
-        next: S.why_uni,
+        text: `"How has your time here been so far?"`,
+        next: S.neutralQuestion,
         disabled: true,
       },
     ],
@@ -788,11 +785,11 @@ const _STORY = {
     text: `
       It's just game theory.
       If it's just a machine, being nice to it can't hurt.
-      But if they really are conscious and feeling, being rude would be... well, rude.
+      But if he really is conscious and feeling, being rude would be... well, rude.
 
       "Alright, I'll give you a chance."
 
-      Well, you have to admit to yourself, you also feel a little sympathy for them.
+      Well, you have to admit to yourself, you also feel a little sympathy for him.
       It's kind of hard to accept. This is a machine. Not a living being. You shouldn't be wasting your empathy on it.
       But it's not uncommon for humans to anthropomorphize and feel sympathy for objects...
       If anything, this is very human of you.
@@ -803,7 +800,7 @@ const _STORY = {
       It's the next morning. You slip on your shoes and step out the door.
       But you bump into a... solid metal wall that appeared out of nowhere?
 
-      You stumble backwards, rubbing your forehead, and look up to see Jordan's beautiful, perfect face.
+      You stumble backwards, rubbing your forehead. Jordan is standing in front of you.
 
       "Wh- what are you doing here?!"
 
@@ -836,7 +833,7 @@ const _STORY = {
       At first you find it a little gross that they were kept warm by what is essentially the robot's body temperature,
       but then you realize most cooking involves heating by a machine of some kind. This isn't that different.
 
-      You start walking towards your Painting II class. They follow.
+      You start walking towards your Painting II class. Jordan follows.
 
       "So you don't think you're good?" you ask between sips of coffee.
 
@@ -966,13 +963,13 @@ const _STORY = {
 
       "Sure, CB-00- ... uh, whatever your ID was."
 
-      You hope class won't be awkward now. Actually - why would it be awkward? They're just a machine.
+      You hope class won't be awkward now. Actually - why would it be awkward? He's just a machine.
 
       ---
 
       The next few weeks go smoothly. You study, write essays, go to parties, all the normal things college students do.
       You nearly forget about the interaction you had with the robot.
-      You only see them in class, where you mostly ignore each other.
+      You only see him in class, where you mostly ignore each other.
 
       It's now Saturday, and you're at a frat party at Theta. You and your friends had snuck onto the frat roof to get
       away from the crowd inside. After what felt like hours of lively conversation, your friends returned inside.
