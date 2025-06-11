@@ -47,9 +47,8 @@ const FinalExplanation = () => {
         <p>
           There are two main characters, one human and one AI/robot. They are
           meant to represent the two opposing voices in my head, and have
-          conversations that I have had with myself. As such, they are both
-          named after nicknames I have used to refer to myself. Coincidentally,
-          they also have meanings relevant to the story:
+          conversations that I have had with myself. Their names have meanings
+          relevant to the story:
         </p>
         <p>
           The name Micah means "Who is like God?" - a rhetorical question, with
