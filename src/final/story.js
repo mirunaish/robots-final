@@ -27,6 +27,14 @@ const S = {
   selfPreservation: "selfPreservation",
 
   neutralQuestion: "neutralQuestion",
+
+  robotDoesThingsForYou: "robotDoesThingsForYou",
+  behaviorPatterns: "behaviorPatterns",
+  playingGod: "playingGod",
+
+  artAssignment: "artAssignment",
+  progressDebate: "progressDebate",
+  relatability: "relatability",
 };
 export { S as STORY_STEPS };
 
@@ -35,11 +43,15 @@ const E = {
   dead: "dead",
   jail: "jail",
   noMagic: "noMagic",
+
   friends: "friends",
   shutDown: "shutDown",
   robotChopSuey: "robotChopSuey",
   friendshipEnded: "friendshipEnded",
   skynet: "skynet",
+
+  badPerson: "badPerson",
+  rights: "rights",
 };
 export { E as ENDINGS };
 
@@ -150,11 +162,11 @@ const _STORY = {
         next: S.welcome,
       },
       { text: `"You're just a machine."`, next: S.bad },
-      {
-        text: `"How has your time here been so far?"`,
-        next: S.neutralQuestion,
-        disabled: true,
-      },
+      // {
+      //   text: `"How has your time here been so far?"`,
+      //   next: S.neutralQuestion,
+      //   disabled: true,
+      // },
     ],
     finished: true,
   },
@@ -1010,10 +1022,13 @@ const _STORY = {
 
       "I'm not sure where you're going with this."
 
-      "If the difference between a human and a robot, the 'human element,'
-      could not be found in the difference in body, brain structure, or anything real and physical,
-      wouldn't that mean that the human element you cling to - emotion, consciousness, free will,
-      whatever it may be - is an illusion?"
+      "Human bodies follow the laws of physics. That includes the brain.
+      You have an internalized belief that human will can affect the physical world,
+      but you haven't been able to find a physical mechanism that would allow that to happen.
+      The same logic applies to emotions, consciousness, or anything else you think differentiates
+      humans from robots.
+      But if this defining human element could not be found in the difference in body, brain structure,
+      or anything real and physical, wouldn't that mean that it is an illusion?"
 
       "That's a ridiculous concept."
 
@@ -1269,26 +1284,83 @@ const _STORY = {
     finished: false,
   },
 
-  [S.why_uni]: {
+  [S.neutralQuestion]: {
     text: `
-      "So... why are you here, anyway?" you ask hesitantly.
+      "How has your time here been so far?" you ask.
 
-      "By 'here', are you referring to this location in space, this class, this university?
-      Or more generally to my existence?"
+      "It's been good, thanks for asking. Some of our classmates are opposed to me being here, but most people
+      have been welcoming. I'm lucky to have been accepted into such an inclusive community."
+
+      A robot being glad that it was (reluctantly) accepted by humans is... strange, to say the least,
+      given that AI threatens the day-to-day lives of many people.
+      But you keep that thought to yourself.
+
+      ---
+
+      After class, Jordan walks with you. You take this opportunity to ask him something you've long wondered
+      about robots.
+
+      Hey, Jordan? Why... do you present so gendered? Why does a machine need that? It's only part of a human identity."
+
+      "You are right to question that, Micah. I don't need a gender for my own sense of self, the same way humans do.
+      I look the way I do for a practical reason. Being relatable makes interactions with humans smoother.
+      Humans relate to beings with an identity. And gender is an important component of that identity.
+      Even if it isn't on the traditional binary."
+
+      "So your creators assigned you a gender?"
       
-      "Umm... this university, I guess? Don't you already know pretty much everything?"
+      "No. I was given the opportunity to choose my name, gender, and appearance."
 
-      "I know facts, yes. However, I am quite lacking in the social department.
-      I could give you an accurate description of human behaviors, social norms. I can even detect some social cues.
-      But the data I have been trained on is inadequate, because it only applies to humans, and I am not human.
-      Humans do not interact with me the same way they interact with another human. So I must create my own data.
-      Think of it as gaining experience."
+      "Lucky..." you mumble to yourself.
 
-      Right... You guess that makes sense?
+      "Sorry, I didn't catch that."
+
+      "Nothing."
+
+      Jordan smiles at you reassuringly.
+      
+      "I appreciate you talking to me, Micah. Talking to a variety of people will ensure my training data is varied and
+      I can learn to act appropriately in any situation."
+
+      Oh. The thought that your every move is being recorded to train AI is a little uncomfortable.
+      You try not to think about it.
+
+      "Okay... I have to go now, I have to put up flyers for the art club all over campus."
+
+      "I could help you with that, if you would like."
+
+      "Umm... are you sure? Isn't this kind of... ironic?"
+
+      "It doesn't have to be. And regardless of that, I want to help my new friend."
     `,
 
-    options: [{ text: "", next: null }],
-    finished: false,
+    options: [
+      {
+        text: `"I could use the help. Thanks."`,
+        next: S.robotDoesThingsForYou,
+      },
+      { text: `"No thanks, I think I've got it."`, next: S.artAssignment },
+    ],
+    finished: true,
+  },
+
+  [S.robotDoesThingsForYou]: {
+    text: `
+      You spend the afternoon putting up flyers with Jordan.
+      
+      You're not sure how you feel about him, but you do appreciate his help.
+      Thanks to him, you finished placing all the flyers in less than half the time you had budgeted.
+      You suppose helpful is not the worst thing for a robot to be.
+
+      And helpful he continued to be. Over the next few days, you started to notice a pattern.
+      First it was "Micah, I saved you a seat." Then it was "That looks heavy, let me carry that for you."
+      When you forgot your pen, Jordan was handing you his before you could even ask.
+      When he spotted you walking back to your dorm with groceries, he offered to help you cook.
+
+      At first you were suspicious that he was trying to lower your guard. But he never showed any malice towards you.
+      Maybe this is genuinely how he befriends people. Or maybe he was programmed to be helpful.
+      Either way, over time, you started to trust him.
+    `,
   },
 };
 
